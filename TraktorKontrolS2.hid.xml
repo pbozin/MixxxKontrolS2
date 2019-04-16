@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MixxxControllerPreset mixxxVersion="2.0.0" schemaVersion="1">
+     <info>
+        <name>Traktor Kontrol S2</name>
+        <author>Petar Bozin</author>
+        <description>HID Mapping for Traktor Kontrol S2</description>
+        <wiki>http://mixxx.org/wiki/doku.php/traktor_s2</wiki>
+        <devices>
+            <product protocol="hid" vendor_id="0x17cc" product_id="0x1101" usage_page="0x1" usage="0x1" interface_number="0x3" />
+        </devices>
+    </info>
+    <controller id="Traktor">
+        <scriptfiles>
+            <file filename="common-hid-packet-parser.js" functionprefix=""/>
+            <file filename="Traktor-Kontrol-S2-hid-scripts.js" functionprefix="TraktorS2"/>
+        </scriptfiles>
+    </controller>
+</MixxxControllerPreset>
